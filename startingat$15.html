@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - Kim's Delivery Service</title>
+    <title>Starting at $15 - Kim's Delivery Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -38,12 +38,13 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
                         <a href="services.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
                         <a href="aboutus.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About Us</a>
-                        <a href="pricing.html" class="text-primary px-3 py-2 text-sm font-medium border-b-2 border-primary">Pricing</a>
-                        <a href="contact.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-                        <button><a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">Get Quote</a></button>
+                        <a href="pricing.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="#contact" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <button> <a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">
+                            Get Quote</a> 
+                        </button>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -59,273 +60,244 @@
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-r from-light-green to-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="font-heading text-4xl lg:text-6xl font-bold text-neutral mb-6">
-                Simple, Transparent Pricing
-            </h1>
-            <p class="text-lg text-neutral/80 mb-8 leading-relaxed max-w-2xl mx-auto">
-                Choose the delivery service that fits your needs. No hidden fees, no surprises - just reliable delivery at competitive rates.
-            </p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="mb-8">
+                    <span class="inline-block bg-accent/20 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        Affordable Delivery Solutions
+                    </span>
+                    <h1 class="font-heading text-4xl lg:text-6xl font-bold text-neutral mb-6">
+                        Starting at <span class="text-primary">$15</span>
+                    </h1>
+                    <p class="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
+                        Professional delivery services that won't break the bank. Get reliable, fast delivery starting at just $15 with transparent pricing and no hidden fees.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">  
+                        <a href="booknow.html">Book Now</a>
+                    </button>
+                    <button> <a href="#pricing" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                        View Pricing</a>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Pricing Plans Section -->
-    <section class="py-20 bg-white">
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Same-Day Delivery -->
-                <div class="bg-light-green rounded-lg p-8 hover:shadow-lg transition-shadow">
-                    <div class="text-center mb-8">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Same-Day Delivery</h3>
-                        <p class="text-neutral/70 mb-6">Perfect for urgent deliveries within the city</p>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-primary">$15</span>
-                            <span class="text-neutral/70">/delivery</span>
-                        </div>
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">
+                    Choose the delivery option that fits your needs and budget. No surprises, no hidden fees.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-light-green rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="mb-6">
+                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Basic Delivery</h3>
+                        <div class="text-4xl font-bold text-primary mb-2">$15</div>
+                        <p class="text-neutral/70">Per delivery within city limits</p>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-3 mb-8 text-left">
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Delivery within 4-6 hours</span>
+                            Standard delivery (2-4 hours)
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Real-time tracking</span>
+                            Up to 10 lbs
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Up to 20 lbs</span>
+                            Basic tracking
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">SMS notifications</span>
+                            Email notifications
                         </li>
                     </ul>
-                    <button> <a href="chooseplan.html" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">Choose Plan</a></button>
+                    <button class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <a href="booknow.html">Choose Basic</a>
+                    </button>
                 </div>
 
-                <!-- Express Shipping -->
-                <div class="bg-white border-2 border-primary rounded-lg p-8 hover:shadow-lg transition-shadow relative">
+                <!-- Express Plan -->
+                <div class="bg-white border-2 border-primary rounded-lg p-8 text-center hover:shadow-lg transition-shadow relative">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
                     </div>
-                    <div class="text-center mb-8">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Express Shipping</h3>
-                        <p class="text-neutral/70 mb-6">Fast nationwide delivery with premium service</p>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-primary">$25</span>
-                            <span class="text-neutral/70">/delivery</span>
-                        </div>
+                    <div class="mb-6">
+                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Express Delivery</h3>
+                        <div class="text-4xl font-bold text-primary mb-2">$25</div>
+                        <p class="text-neutral/70">Per delivery within city limits</p>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-3 mb-8 text-left">
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">1-2 business days</span>
+                            Express delivery (1-2 hours)
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Advanced tracking</span>
+                            Up to 25 lbs
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Up to 50 lbs</span>
+                            Real-time tracking
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Insurance included</span>
+                            SMS & email notifications
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Priority support</span>
+                            Priority support
                         </li>
                     </ul>
-                    <button> <a href="chooseplan.html" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                        Choose Plan</a>
+                    <button class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <a href="booknow.html">Choose Express</a>
                     </button>
                 </div>
 
-                <!-- Secure Logistics -->
-                <div class="bg-light-green rounded-lg p-8 hover:shadow-lg transition-shadow">
-                    <div class="text-center mb-8">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                        </div>
-                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Secure Logistics</h3>
-                        <p class="text-neutral/70 mb-6">Premium service for valuable and fragile items</p>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-primary">$45</span>
-                            <span class="text-neutral/70">/delivery</span>
-                        </div>
+                <!-- Premium Plan -->
+                <div class="bg-light-green rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="mb-6">
+                        <h3 class="font-heading text-2xl font-bold text-neutral mb-2">Premium Delivery</h3>
+                        <div class="text-4xl font-bold text-primary mb-2">$40</div>
+                        <p class="text-neutral/70">Per delivery within city limits</p>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-3 mb-8 text-left">
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">White-glove service</span>
+                            Rush delivery (30-60 minutes)
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Full insurance coverage</span>
+                            Up to 50 lbs
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Up to 100 lbs</span>
+                            Live GPS tracking
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Dedicated support</span>
+                            White-glove service
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                             </svg>
-                            <span class="text-neutral/80">Signature required</span>
+                            Dedicated support line
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Insurance included
                         </li>
                     </ul>
-                    <button> <a href="chooseplan.html" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                        Choose Plan</a>
+                    <button class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <a href="booknow.html">Choose Premium</a>
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Additional Services Section -->
+    <!-- Value Proposition Section -->
     <section class="py-20 bg-light-green">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Additional Services</h2>
-                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">
-                    Enhance your delivery experience with our premium add-on services
-                </p>
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Why Choose Kim's Delivery?</h2>
+                <p class="text-lg text-neutral/70">Affordable pricing without compromising on quality</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-neutral mb-2">Scheduled Delivery</h3>
-                    <p class="text-sm text-neutral/70 mb-3">Choose specific delivery time</p>
-                    <p class="text-lg font-bold text-primary">+$5</p>
+                    <h3 class="font-heading text-xl font-bold text-neutral mb-2">No Hidden Fees</h3>
+                    <p class="text-neutral/70">What you see is what you pay. Transparent pricing with no surprises.</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-neutral mb-2">Extra Insurance</h3>
-                    <p class="text-sm text-neutral/70 mb-3">Additional coverage up to $1000</p>
-                    <p class="text-lg font-bold text-primary">+$8</p>
+                    <h3 class="font-heading text-xl font-bold text-neutral mb-2">Lightning Fast</h3>
+                    <p class="text-neutral/70">From 30 minutes to 4 hours - we deliver at the speed you need.</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-neutral mb-2">Proof of Delivery</h3>
-                    <p class="text-sm text-neutral/70 mb-3">Photo confirmation & signature</p>
-                    <p class="text-lg font-bold text-primary">+$3</p>
+                    <h3 class="font-heading text-xl font-bold text-neutral mb-2">100% Secure</h3>
+                    <p class="text-neutral/70">Your packages are safe with us. Insured and tracked every step.</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-neutral mb-2">Cash on Delivery</h3>
-                    <p class="text-sm text-neutral/70 mb-3">Collect payment on delivery</p>
-                    <p class="text-lg font-bold text-primary">+$7</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Frequently Asked Questions</h2>
-                <p class="text-lg text-neutral/70">
-                    Everything you need to know about our pricing and services
-                </p>
-            </div>
-            <div class="space-y-6">
-                <div class="bg-light-green rounded-lg p-6">
-                    <h3 class="font-semibold text-lg text-neutral mb-2">Are there any hidden fees?</h3>
-                    <p class="text-neutral/80">No, our pricing is completely transparent. The price you see is the price you pay, with no hidden charges or surprise fees.</p>
-                </div>
-                <div class="bg-light-green rounded-lg p-6">
-                    <h3 class="font-semibold text-lg text-neutral mb-2">Do you offer bulk delivery discounts?</h3>
-                    <p class="text-neutral/80">Yes! We offer volume discounts for businesses and customers with regular delivery needs. Contact us for custom pricing on bulk orders.</p>
-                </div>
-                <div class="bg-light-green rounded-lg p-6">
-                    <h3 class="font-semibold text-lg text-neutral mb-2">What payment methods do you accept?</h3>
-                    <p class="text-neutral/80">We accept all major credit cards, PayPal, bank transfers, and cash on delivery (with additional fee).</p>
-                </div>
-                <div class="bg-light-green rounded-lg p-6">
-                    <h3 class="font-semibold text-lg text-neutral mb-2">Can I change my delivery service after booking?</h3>
-                    <p class="text-neutral/80">Yes, you can upgrade your service level up to 2 hours before pickup. Downgrades may be subject to cancellation fees.</p>
+                    <h3 class="font-heading text-xl font-bold text-neutral mb-2">Customer First</h3>
+                    <p class="text-neutral/70">Dedicated support team ready to help you 24/7.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-primary">
+    <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-heading text-3xl lg:text-4xl font-bold text-white mb-6">
+            <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-6">
                 Ready to Get Started?
             </h2>
-            <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Choose your delivery service and experience the reliability and speed that thousands of customers trust every day.
+            <p class="text-lg text-neutral/70 mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied customers who trust Kim's Delivery for their shipping needs. Book your first delivery today and experience the difference.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                    Get Custom Quote
+                <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    <a href="booknow.html">Book Your Delivery</a>
                 </button>
-                <button ><a href="contactsales.html"  class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                    Contact Sales</a> 
+                <button>
+                    <a href="getquote.html" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                        Get Custom Quote
+                    </a>
                 </button>
             </div>
         </div>
