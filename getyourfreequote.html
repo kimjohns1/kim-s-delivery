@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Quote - Kim's Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Playfair Display', 'serif'],
+                        'body': ['Source Sans Pro', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#15803d',
+                        secondary: '#84cc16',
+                        accent: '#84cc16',
+                        neutral: '#374151',
+                        'light-green': '#f0fdf4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-white text-neutral">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="font-heading text-2xl font-bold text-primary">Kim's Delivery</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="services.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="aboutus.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About Us</a>
+                        <a href="pricing.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="#contact" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <span class="bg-accent text-neutral px-6 py-2 rounded-lg font-semibold">Get Quote</span>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-neutral hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="bg-light-green py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <svg class="w-4 h-4 text-neutral/60" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="text-primary font-semibold">Get Free Quote</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-r from-light-green to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-heading text-4xl lg:text-5xl font-bold text-neutral mb-6">
+                Get Your Free Delivery Quote
+            </h1>
+            <p class="text-xl text-neutral/80 max-w-3xl mx-auto mb-8">
+                Tell us about your delivery needs and we'll provide you with a customized quote within 24 hours. No hidden fees, no commitments - just transparent pricing.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8 mb-8">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-neutral">24-Hour Response</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-neutral">No Hidden Fees</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-neutral">100% Free Quote</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-light-green rounded-xl p-8 lg:p-12">
+                <form class="space-y-8" id="quoteForm">
+                    <!-- Personal Information -->
+                    <div>
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Personal Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-semibold text-neutral mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-semibold text-neutral mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-neutral mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-neutral mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="company" class="block text-sm font-semibold text-neutral mb-2">Company Name (Optional)</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Delivery Details -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Delivery Details</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="pickupAddress" class="block text-sm font-semibold text-neutral mb-2">Pickup Address *</label>
+                                <textarea id="pickupAddress" name="pickupAddress" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Street address, city, postal code" required></textarea>
+                            </div>
+                            <div>
+                                <label for="deliveryAddress" class="block text-sm font-semibold text-neutral mb-2">Delivery Address *</label>
+                                <textarea id="deliveryAddress" name="deliveryAddress" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Street address, city, postal code" required></textarea>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div>
+                                <label for="pickupDate" class="block text-sm font-semibold text-neutral mb-2">Preferred Pickup Date *</label>
+                                <input type="date" id="pickupDate" name="pickupDate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                            <div>
+                                <label for="pickupTime" class="block text-sm font-semibold text-neutral mb-2">Preferred Pickup Time *</label>
+                                <select id="pickupTime" name="pickupTime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                                    <option value="evening">Evening (5:00 PM - 8:00 PM)</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Type -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Service Type</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="same-day" class="sr-only peer" required>
+                                <div class="bg-white border-2 border-gray-300 rounded-lg p-6 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 hover:border-gray-400 transition-colors">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-semibold text-neutral text-center mb-2">Same-Day Delivery</h3>
+                                    <p class="text-sm text-neutral/70 text-center">Fast delivery within hours</p>
+                                </div>
+                            </label>
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="express" class="sr-only peer" required>
+                                <div class="bg-white border-2 border-gray-300 rounded-lg p-6 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 hover:border-gray-400 transition-colors">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-semibold text-neutral text-center mb-2">Express Shipping</h3>
+                                    <p class="text-sm text-neutral/70 text-center">1-3 business days</p>
+                                </div>
+                            </label>
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="secure" class="sr-only peer" required>
+                                <div class="bg-white border-2 border-gray-300 rounded-lg p-6 cursor-pointer peer-checked:border-primary peer-checked:bg-primary/5 hover:border-gray-400 transition-colors">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-semibold text-neutral text-center mb-2">Secure Logistics</h3>
+                                    <p class="text-sm text-neutral/70 text-center">High-value items</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Package Information -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Package Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="packageType" class="block text-sm font-semibold text-neutral mb-2">Package Type *</label>
+                                <select id="packageType" name="packageType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                                    <option value="">Select package type</option>
+                                    <option value="documents">Documents</option>
+                                    <option value="small-package">Small Package (under 5kg)</option>
+                                    <option value="medium-package">Medium Package (5-25kg)</option>
+                                    <option value="large-package">Large Package (25kg+)</option>
+                                    <option value="fragile">Fragile Items</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="medical">Medical Supplies</option>
+                                    <option value="food">Food & Beverages</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="quantity" class="block text-sm font-semibold text-neutral mb-2">Number of Items *</label>
+                                <input type="number" id="quantity" name="quantity" min="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                            <div>
+                                <label for="weight" class="block text-sm font-semibold text-neutral mb-2">Approximate Weight (kg)</label>
+                                <input type="number" id="weight" name="weight" step="0.1" min="0" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+                            </div>
+                            <div>
+                                <label for="length" class="block text-sm font-semibold text-neutral mb-2">Length (cm)</label>
+                                <input type="number" id="length" name="length" min="0" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+                            </div>
+                            <div>
+                                <label for="value" class="block text-sm font-semibold text-neutral mb-2">Package Value (KES)</label>
+                                <input type="number" id="value" name="value" min="0" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="For insurance purposes">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Requirements -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Special Requirements</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="signature" name="specialRequirements" value="signature" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-accent focus:ring-2">
+                                <label for="signature" class="ml-3 text-sm font-medium text-neutral">Signature Required</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="insurance" name="specialRequirements" value="insurance" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-accent focus:ring-2">
+                                <label for="insurance" class="ml-3 text-sm font-medium text-neutral">Additional Insurance Coverage</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="fragile" name="specialRequirements" value="fragile" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-accent focus:ring-2">
+                                <label for="fragile" class="ml-3 text-sm font-medium text-neutral">Fragile Handling</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="tracking" name="specialRequirements" value="tracking" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-accent focus:ring-2">
+                                <label for="tracking" class="ml-3 text-sm font-medium text-neutral">Real-time Tracking</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h2 class="font-heading text-2xl font-bold text-neutral mb-6">Additional Information</h2>
+                        <div>
+                            <label for="notes" class="block text-sm font-semibold text-neutral mb-2">Special Instructions or Notes</label>
+                            <textarea id="notes" name="notes" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Any special handling instructions, access codes, or other important information..."></textarea>
+                        </div>
+                        <div class="mt-6">
+                            <label for="budget" class="block text-sm font-semibold text-neutral mb-2">Estimated Budget Range (KES)</label>
+                            <select id="budget" name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under KES 500</option>
+                                <option value="500-1000">KES 500 - 1,000</option>
+                                <option value="1000-2500">KES 1,000 - 2,500</option>
+                                <option value="2500-5000">KES 2,500 - 5,000</option>
+                                <option value="5000-10000">KES 5,000 - 10,000</option>
+                                <option value="over-10000">Over KES 10,000</option>
+                                <option value="not-sure">Not sure</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                            Get My Free Quote
+                        </button>
+                        <p class="text-sm text-neutral/70 text-center mt-4">
+                            By submitting this form, you agree to receive communications from Kim's Delivery regarding your quote request.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-light-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Why Get a Quote from Us?</h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">
+                    We're committed to providing transparent, competitive pricing for all our delivery services
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-neutral mb-2">Competitive Pricing</h3>
+                    <p class="text-sm text-neutral/70">Fair rates with no hidden charges or surprise fees</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-neutral mb-2">Accurate Estimates</h3>
+                    <p class="text-sm text-neutral/70">Detailed quotes based on your specific requirements</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-neutral mb-2">Fast Response</h3>
+                    <p class="text-sm text-neutral/70">Receive your customized quote within 24 hours</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-neutral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
