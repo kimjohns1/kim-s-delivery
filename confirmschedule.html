@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim's Delivery - Schedule Your Delivery Now</title>
+    <title>Kim's Delivery - Confirm Your Delivery Schedule</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -60,23 +60,23 @@
     <section class="relative bg-gradient-to-r from-light-green to-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="font-heading text-4xl lg:text-5xl font-bold text-neutral mb-6">Schedule Your Delivery Now</h1>
+                <h1 class="font-heading text-4xl lg:text-5xl font-bold text-neutral mb-6">Confirm Your Delivery Schedule</h1>
                 <p class="text-lg text-neutral/80 mb-8 max-w-2xl mx-auto">
-                    Plan your delivery with ease. Select your preferred time and let Kim's Delivery handle the rest with speed and reliability.
+                    Review your delivery details below to ensure everything is correct. Once confirmed, we'll take care of the rest!
                 </p>
-                <a href="schedulenow.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Schedule Now</a>
+                <a href="#confirm-details" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Review & Confirm</a>
             </div>
         </div>
     </section>
 
-    <!-- Schedule Delivery Section -->
-    <section id="schedule-form" class="py-20 bg-white">
+    <!-- Confirm Schedule Section -->
+    <section id="confirm-details" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-6">Schedule Your Delivery</h2>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-6">Your Delivery Details</h2>
                     <p class="text-lg text-neutral/70 mb-8">
-                        Choose your delivery details below to ensure your package arrives exactly when and where you need it. Our team is here to make it happen.
+                        Please review the details of your scheduled delivery. If everything looks correct, confirm to finalize your order.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-center">
@@ -86,19 +86,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-neutral">Flexible Scheduling</p>
-                                <p class="text-neutral/70">Choose a delivery time that works best for you.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-neutral">Fast Delivery</p>
-                                <p class="text-neutral/70">Same-day and express options for urgent deliveries.</p>
+                                <p class="font-semibold text-neutral">Scheduled Delivery</p>
+                                <p class="text-neutral/70">Your package will be delivered at your chosen time and date.</p>
                             </div>
                         </div>
                         <div class="flex items-center">
@@ -108,60 +97,62 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-neutral">Reliable Service</p>
-                                <p class="text-neutral/70">Track your package and stay updated every step of the way.</p>
+                                <p class="font-semibold text-neutral">Secure & Reliable</p>
+                                <p class="text-neutral/70">Your package is handled with care and tracked every step of the way.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-neutral">Confirmation</p>
+                                <p class="text-neutral/70">You'll receive a confirmation email with all the details once finalized.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-light-green rounded-lg p-8">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="senderName" class="block text-sm font-semibold text-neutral mb-2">Sender Name</label>
-                                <input type="text" id="senderName" name="senderName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
-                            </div>
-                            <div>
-                                <label for="recipientName" class="block text-sm font-semibold text-neutral mb-2">Recipient Name</label>
-                                <input type="text" id="recipientName" name="recipientName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
-                            </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Sender Name</h3>
+                            <p class="text-neutral/70">[Sender Name]</p>
                         </div>
                         <div>
-                            <label for="pickupAddress" class="block text-sm font-semibold text-neutral mb-2">Pickup Address</label>
-                            <input type="text" id="pickupAddress" name="pickupAddress" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Recipient Name</h3>
+                            <p class="text-neutral/70">[Recipient Name]</p>
                         </div>
                         <div>
-                            <label for="deliveryAddress" class="block text-sm font-semibold text-neutral mb-2">Delivery Address</label>
-                            <input type="text" id="deliveryAddress" name="deliveryAddress" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Pickup Address</h3>
+                            <p class="text-neutral/70">[Pickup Address]</p>
                         </div>
                         <div>
-                            <label for="deliveryDate" class="block text-sm font-semibold text-neutral mb-2">Delivery Date</label>
-                            <input type="date" id="deliveryDate" name="deliveryDate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Delivery Address</h3>
+                            <p class="text-neutral/70">[Delivery Address]</p>
                         </div>
                         <div>
-                            <label for="deliveryTime" class="block text-sm font-semibold text-neutral mb-2">Preferred Delivery Time</label>
-                            <select id="deliveryTime" name="deliveryTime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
-                                <option value="">Select a time slot</option>
-                                <option value="morning">Morning (8 AM - 12 PM)</option>
-                                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
-                                <option value="evening">Evening (4 PM - 8 PM)</option>
-                            </select>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Delivery Date</h3>
+                            <p class="text-neutral/70">[Delivery Date]</p>
                         </div>
                         <div>
-                            <label for="serviceType" class="block text-sm font-semibold text-neutral mb-2">Service Type</label>
-                            <select id="serviceType" name="serviceType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
-                                <option value="">Select a service</option>
-                                <option value="same-day">Same-Day Delivery</option>
-                                <option value="express">Express Shipping</option>
-                                <option value="logistics">Secure Logistics</option>
-                            </select>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Preferred Delivery Time</h3>
+                            <p class="text-neutral/70">[Delivery Time]</p>
                         </div>
                         <div>
-                            <label for="notes" class="block text-sm font-semibold text-neutral mb-2">Additional Notes</label>
-                            <textarea id="notes" name="notes" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Any special instructions for delivery..."></textarea>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Service Type</h3>
+                            <p class="text-neutral/70">[Service Type]</p>
                         </div>
-                        <a href="confirmschedule.html" class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center block">Confirm Schedule</a>
-                    </form>
+                        <div>
+                            <h3 class="font-semibold text-lg text-neutral mb-2">Additional Notes</h3>
+                            <p class="text-neutral/70">[Additional Notes]</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="edit-schedule.html" class="w-full bg-accent hover:bg-accent/90 text-neutral px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center">Edit Details</a>
+                            <a href="confirmschedule.html" class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center">Confirm Schedule</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
