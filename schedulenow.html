@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim's Delivery - Schedule Same-Day Delivery</title>
+    <title>Kim's Delivery - Schedule Your Delivery Now</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -60,25 +60,36 @@
     <section class="relative bg-gradient-to-r from-light-green to-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="font-heading text-4xl lg:text-5xl font-bold text-neutral mb-6">Schedule Same-Day Delivery</h1>
+                <h1 class="font-heading text-4xl lg:text-5xl font-bold text-neutral mb-6">Schedule Your Delivery Now</h1>
                 <p class="text-lg text-neutral/80 mb-8 max-w-2xl mx-auto">
-                    Need your package delivered today? Schedule your same-day delivery with Kim's Delivery and enjoy fast, reliable service within hours.
+                    Plan your delivery with ease. Select your preferred time and let Kim's Delivery handle the rest with speed and reliability.
                 </p>
                 <a href="schedulenow.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Schedule Now</a>
             </div>
         </div>
     </section>
 
-    <!-- Schedule Form Section -->
+    <!-- Schedule Delivery Section -->
     <section id="schedule-form" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-6">Book Your Same-Day Delivery</h2>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-6">Schedule Your Delivery</h2>
                     <p class="text-lg text-neutral/70 mb-8">
-                        Fill out the form below to schedule your same-day delivery. Our team will confirm your request and provide real-time tracking for your package.
+                        Choose your delivery details below to ensure your package arrives exactly when and where you need it. Our team is here to make it happen.
                     </p>
                     <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-neutral">Flexible Scheduling</p>
+                                <p class="text-neutral/70">Choose a delivery time that works best for you.</p>
+                            </div>
+                        </div>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,19 +97,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-neutral">Same-Day Delivery</p>
-                                <p class="text-neutral/70">Fast delivery within hours for urgent needs.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-neutral">Flexible Scheduling</p>
-                                <p class="text-neutral/70">Choose a delivery window that suits you.</p>
+                                <p class="font-semibold text-neutral">Fast Delivery</p>
+                                <p class="text-neutral/70">Same-day and express options for urgent deliveries.</p>
                             </div>
                         </div>
                         <div class="flex items-center">
@@ -108,8 +108,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="font-semibold text-neutral">Secure Handling</p>
-                                <p class="text-neutral/70">Your packages are handled with care and precision.</p>
+                                <p class="font-semibold text-neutral">Reliable Service</p>
+                                <p class="text-neutral/70">Track your package and stay updated every step of the way.</p>
                             </div>
                         </div>
                     </div>
@@ -135,6 +135,10 @@
                             <input type="text" id="deliveryAddress" name="deliveryAddress" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
                         </div>
                         <div>
+                            <label for="deliveryDate" class="block text-sm font-semibold text-neutral mb-2">Delivery Date</label>
+                            <input type="date" id="deliveryDate" name="deliveryDate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                        </div>
+                        <div>
                             <label for="deliveryTime" class="block text-sm font-semibold text-neutral mb-2">Preferred Delivery Time</label>
                             <select id="deliveryTime" name="deliveryTime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
                                 <option value="">Select a time slot</option>
@@ -144,10 +148,19 @@
                             </select>
                         </div>
                         <div>
-                            <label for="packageDetails" class="block text-sm font-semibold text-neutral mb-2">Package Details</label>
-                            <textarea id="packageDetails" name="packageDetails" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Describe your package (size, weight, special instructions)..."></textarea>
+                            <label for="serviceType" class="block text-sm font-semibold text-neutral mb-2">Service Type</label>
+                            <select id="serviceType" name="serviceType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" required>
+                                <option value="">Select a service</option>
+                                <option value="same-day">Same-Day Delivery</option>
+                                <option value="express">Express Shipping</option>
+                                <option value="logistics">Secure Logistics</option>
+                            </select>
                         </div>
-                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Schedule Delivery</button>
+                        <div>
+                            <label for="notes" class="block text-sm font-semibold text-neutral mb-2">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors" placeholder="Any special instructions for delivery..."></textarea>
+                        </div>
+                        <a href="confirm.html" class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center block">Confirm Schedule</a>
                     </form>
                 </div>
             </div>
@@ -184,7 +197,7 @@
                 <div>
                     <h4 class="font-semibold text-lg mb-4">Services</h4>
                     <ul class="space-y-2">
-                        <li><a href="schedulesame-day.html" class="text-white/80 hover:text-white transition-colors">Same-Day Delivery</a></li>
+                        <li><a href="same-daydelivery.html" class="text-white/80 hover:text-white transition-colors">Same-Day Delivery</a></li>
                         <li><a href="#" class="text-white/80 hover:text-white transition-colors">Express Shipping</a></li>
                         <li><a href="#" class="text-white/80 hover:text-white transition-colors">Secure Logistics</a></li>
                         <li><a href="#" class="text-white/80 hover:text-white transition-colors">Package Tracking</a></li>
