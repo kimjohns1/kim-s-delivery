@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Delivery Service - Kim's Delivery</title>
+    <title>Book a Delivery - Kim's Delivery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -43,7 +43,7 @@
                         <a href="aboutus.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About Us</a>
                         <a href="pricing.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
                         <a href="#contact" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-                        <button><a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">Get Quote</a></button>
+                        <a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">Get Quote</a>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -62,76 +62,58 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="font-heading text-4xl lg:text-6xl font-bold text-neutral mb-6">
-                    Book Your Delivery Service
+                    Book Your Delivery
                 </h1>
                 <p class="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Choose your delivery service and provide your details to get started with Kim's Delivery. Fast, reliable, and tailored to your needs.
+                    Schedule your delivery with Kim's Delivery. Fill out the form below to arrange fast and reliable delivery services tailored to your needs.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Booking Form Section -->
+    <!-- Delivery Booking Form Section -->
     <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-light-green rounded-lg shadow-md p-8">
-                <h2 class="font-heading text-3xl font-bold text-neutral mb-6 text-center">Book Your Delivery</h2>
+                <h2 class="font-heading text-3xl font-bold text-neutral mb-6 text-center">Delivery Booking Form</h2>
                 <div class="space-y-6">
-                    <!-- Service Selection -->
+                    <!-- Sender Information -->
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Select Your Service</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">Same-Day Delivery</h4>
-                                <p class="text-neutral/70 text-sm">Get your package delivered today with our fastest service.</p>
-                                <input type="radio" name="service-type" value="same-day" class="mt-4" checked>
+                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Sender Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="sender-name" class="block text-sm font-medium text-neutral/80">Full Name</label>
+                                <input type="text" id="sender-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your full name" required>
                             </div>
-                            <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">Express Shipping</h4>
-                                <p class="text-neutral/70 text-sm">Fast and cost-effective delivery for urgent needs.</p>
-                                <input type="radio" name="service-type" value="express" class="mt-4">
+                            <div>
+                                <label for="sender-email" class="block text-sm font-medium text-neutral/80">Email Address</label>
+                                <input type="email" id="sender-email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your email" required>
                             </div>
-                            <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 .825-.15 1.61-.416 2.314M12 11c0-2.485 1.343-4.5 3-4.5S18 8.515 18 11c0 .825-.15 1.61-.416 2.314M12 11c0-2.485-1.343-4.5-3-4.5S6 8.515 6 11c0 .825.15 1.61.416 2.314M12 11l1 10m-2 0h2m-2 0l-1-10m8.314-3.314a9 9 0 11-12.628 0" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">Secure Logistics</h4>
-                                <p class="text-neutral/70 text-sm">Safe handling and tracking for valuable packages.</p>
-                                <input type="radio" name="service-type" value="secure" class="mt-4">
+                            <div>
+                                <label for="sender-phone" class="block text-sm font-medium text-neutral/80">Phone Number</label>
+                                <input type="tel" id="sender-phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your phone number" required>
+                            </div>
+                            <div>
+                                <label for="sender-address" class="block text-sm font-medium text-neutral/80">Pickup Address</label>
+                                <input type="text" id="sender-address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter pickup address" required>
                             </div>
                         </div>
                     </div>
-                    <!-- Contact Information -->
+                    <!-- Recipient Information -->
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Your Contact Information</h3>
+                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Recipient Information</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-neutral/80">Full Name</label>
-                                <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your full name">
+                                <label for="recipient-name" class="block text-sm font-medium text-neutral/80">Full Name</label>
+                                <input type="text" id="recipient-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter recipient's full name" required>
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium text-neutral/80">Email</label>
-                                <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your email">
+                                <label for="recipient-phone" class="block text-sm font-medium text-neutral/80">Phone Number</label>
+                                <input type="tel" id="recipient-phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter recipient's phone number" required>
                             </div>
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-neutral/80">Phone Number</label>
-                                <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your phone number">
-                            </div>
-                            <div>
-                                <label for="address" class="block text-sm font-medium text-neutral/80">Pickup Address</label>
-                                <input type="text" id="address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter pickup address">
+                            <div class="md:col-span-2">
+                                <label for="recipient-address" class="block text-sm font-medium text-neutral/80">Delivery Address</label>
+                                <input type="text" id="recipient-address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter delivery address" required>
                             </div>
                         </div>
                     </div>
@@ -140,12 +122,35 @@
                         <h3 class="font-heading text-xl font-bold text-neutral mb-4">Package Details</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label for="destination" class="block text-sm font-medium text-neutral/80">Destination Address</label>
-                                <input type="text" id="destination" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter destination address">
+                                <label for="package-weight" class="block text-sm font-medium text-neutral/80">Weight (kg)</label>
+                                <input type="number" id="package-weight" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter package weight" min="0.1" step="0.1" required>
                             </div>
                             <div>
-                                <label for="description" class="block text-sm font-medium text-neutral/80">Package Description (Optional)</label>
-                                <textarea id="description" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" rows="3" placeholder="Describe the package (e.g., size, weight, contents)"></textarea>
+                                <label for="package-dimensions" class="block text-sm font-medium text-neutral/80">Dimensions (L x W x H in cm)</label>
+                                <input type="text" id="package-dimensions" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="e.g., 30 x 20 x 10" required>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="package-description" class="block text-sm font-medium text-neutral/80">Description (Optional)</label>
+                                <textarea id="package-description" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" rows="3" placeholder="Describe the package contents or special instructions"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Delivery Preferences -->
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Delivery Preferences</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="delivery-date" class="block text-sm font-medium text-neutral/80">Preferred Delivery Date</label>
+                                <input type="date" id="delivery-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" required>
+                            </div>
+                            <div>
+                                <label for="delivery-type" class="block text-sm font-medium text-neutral/80">Delivery Type</label>
+                                <select id="delivery-type" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" required>
+                                    <option value="" disabled selected>Select delivery type</option>
+                                    <option value="same-day">Same-Day Delivery</option>
+                                    <option value="express">Express Shipping</option>
+                                    <option value="standard">Standard Delivery</option>
+                                </select>
                             </div>
                         </div>
                     </div>
