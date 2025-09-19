@@ -62,10 +62,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="font-heading text-4xl lg:text-6xl font-bold text-neutral mb-6">
-                    Submit Your Service Request
+                    Submit Your Request
                 </h1>
                 <p class="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Let us know how Kim's Delivery can assist you. Fill out the form below, and we'll get back to you promptly with tailored solutions.
+                    Contact Kim's Delivery to discuss your delivery needs. Fill out the form below, and we'll respond with customized solutions.
                 </p>
             </div>
         </div>
@@ -75,11 +75,11 @@
     <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-light-green rounded-lg shadow-md p-8">
-                <h2 class="font-heading text-3xl font-bold text-neutral mb-6 text-center">Service Request Form</h2>
+                <h2 class="font-heading text-3xl font-bold text-neutral mb-6 text-center">General Request Form</h2>
                 <div class="space-y-6">
                     <!-- Contact Information -->
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Your Contact Information</h3>
+                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Your Details</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-neutral/80">Full Name</label>
@@ -93,46 +93,6 @@
                                 <label for="phone" class="block text-sm font-medium text-neutral/80">Phone Number</label>
                                 <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your phone number" required>
                             </div>
-                            <div>
-                                <label for="company" class="block text-sm font-medium text-neutral/80">Company Name (Optional)</label>
-                                <input type="text" id="company" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your company name">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Request Type -->
-                    <div>
-                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Request Type</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <label class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-                                <input type="radio" name="request-type" value="delivery" class="hidden peer" checked>
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 peer-checked:ring-2 peer-checked:ring-accent">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">Delivery Service</h4>
-                                <p class="text-neutral/70 text-sm">Request a one-time or recurring delivery service.</p>
-                            </label>
-                            <label class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-                                <input type="radio" name="request-type" value="quote" class="hidden peer">
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 peer-checked:ring-2 peer-checked:ring-accent">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">Custom Quote</h4>
-                                <p class="text-neutral/70 text-sm">Get a tailored quote for your specific needs.</p>
-                            </label>
-                            <label class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-                                <input type="radio" name="request-type" value="inquiry" class="hidden peer">
-                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 peer-checked:ring-2 peer-checked:ring-accent">
-                                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5v-4a2 2 0 012-2h10a2 2 0 012 2v4h-4M12 4v2" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-heading text-lg font-bold text-neutral mb-2">General Inquiry</h4>
-                                <p class="text-neutral/70 text-sm">Have questions or need more information?</p>
-                            </label>
                         </div>
                     </div>
                     <!-- Request Details -->
@@ -140,14 +100,18 @@
                         <h3 class="font-heading text-xl font-bold text-neutral mb-4">Request Details</h3>
                         <div class="grid grid-cols-1 gap-6">
                             <div>
-                                <label for="request-details" class="block text-sm font-medium text-neutral/80">Details of Your Request</label>
-                                <textarea id="request-details" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" rows="5" placeholder="Describe your request (e.g., delivery requirements, questions, or specific needs)" required></textarea>
+                                <label for="subject" class="block text-sm font-medium text-neutral/80">Subject</label>
+                                <input type="text" id="subject" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="e.g., Delivery Inquiry, Quote Request" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-neutral/80">Message</label>
+                                <textarea id="message" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" rows="5" placeholder="Describe your request or inquiry" required></textarea>
                             </div>
                         </div>
                     </div>
                     <!-- Submit Button -->
                     <div class="text-center">
-                        <button><a href="submitrequ.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"> Submit Requ</a></button>
+                        <button><a href="submitrequ.html"  class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Submit Request</a></button>
                     </div>
                 </div>
             </div>
