@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Delivery - Kim's Delivery</title>
+    <title>Cancel Delivery - Kim's Delivery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -43,7 +43,7 @@
                         <a href="aboutus.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About Us</a>
                         <a href="pricing.html" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
                         <a href="#contact" class="text-neutral hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-                        <a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">Get Quote</a>
+                        <button><a href="getquote.html" class="bg-accent hover:bg-accent/90 text-neutral px-6 py-2 rounded-lg font-semibold transition-colors">Get Quote</a></button>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -57,56 +57,32 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-light-green to-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="font-heading text-4xl lg:text-6xl font-bold text-neutral mb-6">
-                    Delete Delivery Request
-                </h1>
-                <p class="text-lg text-neutral/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Cancel a confirmed delivery request by entering its reference number below. Please ensure you have the correct delivery ID before proceeding.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Delete Delivery Form Section -->
-    <section class="py-20 bg-white">
+    <!-- Cancel Delivery Section -->
+    <section class="py-20 bg-light-green">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-light-green rounded-lg shadow-md p-8">
-                <h2 class="font-heading text-3xl font-bold text-neutral mb-6 text-center">Delete Delivery Form</h2>
-                <div class="space-y-6">
-                    <!-- Delivery Information -->
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-neutral mb-4">Cancel Your Delivery</h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">We understand plans can change. Use the form below to cancel your delivery or contact us for assistance.</p>
+            </div>
+            <div class="bg-white rounded-lg p-8 shadow-md">
+                <form action="#" method="POST" class="space-y-6">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-neutral mb-4">Delivery Details</h3>
-                        <div class="grid grid-cols-1 gap-6">
-                            <div>
-                                <label for="delivery-id" class="block text-sm font-medium text-neutral/80">Delivery ID or Reference Number</label>
-                                <input type="text" id="delivery-id" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter delivery ID or reference number" required>
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-neutral/80">Email Address (Optional)</label>
-                                <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" placeholder="Enter your email for confirmation">
-                            </div>
-                            <div>
-                                <label for="notes" class="block text-sm font-medium text-neutral/80">Reason for Cancellation (Optional)</label>
-                                <textarea id="notes" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm" rows="3" placeholder="Provide any additional notes or reasons for cancellation"></textarea>
-                            </div>
-                        </div>
+                        <label for="order-number" class="block text-sm font-semibold text-neutral">Order Number</label>
+                        <input type="text" id="order-number" name="order-number" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3" placeholder="Enter your order number">
                     </div>
-                    <!-- Confirmation Checkbox -->
                     <div>
-                        <label class="flex items-center">
-                            <input type="checkbox" class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded" required>
-                            <span class="ml-2 text-sm text-neutral/80">I confirm that I want to cancel this delivery request.</span>
-                        </label>
+                        <label for="email" class="block text-sm font-semibold text-neutral">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3" placeholder="Enter your email address">
                     </div>
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button><a href="canceldelivery.html" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Cancel Delivery</a>>/button>
+                    <div>
+                        <label for="reason" class="block text-sm font-semibold text-neutral">Reason for Cancellation</label>
+                        <textarea id="reason" name="reason" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3" placeholder="Please provide a brief reason for cancellation"></textarea>
                     </div>
-                </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Submit Cancellation</button>
+                    </div>
+                </form>
+                <p class="text-center text-neutral/70 mt-6">Need help? <a href="contactus.html" class="text-primary hover:underline">Contact our support team</a>.</p>
             </div>
         </div>
     </section>
